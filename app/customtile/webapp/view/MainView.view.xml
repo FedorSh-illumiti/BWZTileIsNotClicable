@@ -1,0 +1,18 @@
+<mvc:View controllerName="customtile.controller.MainView" xmlns="sap.suite.ui.microchart" xmlns:m="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<m:GenericTile header="Revenue Dynamics" frameType="TwoByOne" sizeBehavior="Responsive" wrappingType="Hyphenated" >
+		<m:tileContent>
+			<m:TileContent footer="Country Wise" frameType="TwoByOne">
+				<m:content>
+					<ComparisonMicroChart scale="M" view="Wide" size="Responsive">
+						<data>
+							<ComparisonMicroChartData title="Americas" value="10" color="Critical"/>
+							<ComparisonMicroChartData title="EMEA" value="50" color="Good"/>
+							<ComparisonMicroChartData title="APAC" value="-20" color="Error"/>
+						</data>
+					</ComparisonMicroChart>
+				</m:content>
+			</m:TileContent>
+		</m:tileContent>
+	</m:GenericTile>
+</mvc:View>
